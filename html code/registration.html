@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WELCOME TO B7 CODING ACTIVITY</title>
+</head>
+<body>
+<p><a href="home.html">back to home page</a></p>
+<center>
+    <H3>REGISTRATION FORM FOR 5G HACKATHON</H3>
+    <br>
+    <form name="f1" onsubmit="return form_validation()">
+        <table cellpadding="1" align="center">
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="USERNAME"></td>
+            </tr>
+            <tr>
+                <td>Choose a ID:</td>
+                <td><input type="text" name="ID"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="PASSWORD"></td>
+            </tr>
+            <tr>
+                <td>Re-Enter Password:</td>
+                <td><input type="password" name="Re-Enter PASSWORD"></td>
+            </tr>
+            <tr>
+                <td>Phone Number:</td>
+                <td><input type="number" name="PHONE NUMBER"></td>
+            </tr>
+            <tr>
+                <td>GENDER:</td>
+                <td><input type="radio" name="radio" value="1">MALE<br>
+                <td><input type="radio" name="radio" value="1">FE-MALE</td>
+            </tr>
+            <tr>
+                <td>Date of Birth:</td>
+                <td>dd:
+                    <select name="dd">
+                        <option></option>
+                        <script type="text/javascript">
+                         for(i=0;i<=31;i++)
+                         document.write("<option value=i>"+i+"</option>");
+                        </script>
+                    </select>
+                    mm:
+                    <select name="mm">
+                        <option></option>
+                        <script type="text/javascript">
+                         for(i=0;i<=12;i++)
+                         document.write("<option value=i>"+i+"</option>");
+                        </script>
+                    </select>
+                    yyyy:
+                    <select name=yyyy>
+                        <option></option>
+                        <script type="text/javascript">
+                            for(i=1900;i<=2020;i++)
+                                document.write("<option value=i>"+i+"</option>");
+                        </script>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>MARITAL STATUS:</td>
+                <td><input type="text" name="MSTATUS"></td>
+            </tr>
+            <tr>
+                <td>NATIONALITY:</td>
+                <td><input type="text" name="NATIONALITY"></td>
+            </tr>
+            <tr>
+                <td valign="Top">Language Known:</td>
+                <td><input type="checkbox" name="checkbox" value="English">English<br>
+                <input type="checkbox" name="checkbox" value="Telugu">Telugu<br>
+                <input type="checkbox" name="checkbox" value="Hindi">Hindi<br>
+                <input type="checkbox" name="checkbox" value="Tamil">Tamil<br>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">Address:</td>
+                <td><textarea name="Address"></textarea> </td>
+                <tr><td></td>
+            <td>
+
+                <a href="submit.html"><input type="submit" value="submit" hspace="10"></a>
+
+           <input type="reset" value="reset">
+
+
+            </tr>
+            <tr>
+                <td colspan="2">*<font color="#FF0000">ALL FIELDS ARE MANDATORY</font> </td>
+            </tr>
+
+        </table>
+
+    </form>
+</center>
+</body>
+</html>
